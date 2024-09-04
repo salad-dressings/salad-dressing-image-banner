@@ -22,7 +22,9 @@
             "icon": "fas fa-image"
         },
         "resources": {
-            "migration": []
+            "migration": [
+                "CreateImageBannerTable.php"
+            ]
         },
         "navigation": {
             "admin": "/admin/image-banner"

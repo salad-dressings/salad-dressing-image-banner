@@ -21,7 +21,8 @@ class ImageBannerController extends Controller
     
     public function index()
     {
-        $this->view->render('base_image_banner');
+        $css = __DIR__ . '/../Styles/style.css';
+        $this->view->render('base_image_banner', ["style" => $css]);
     }
     
 }

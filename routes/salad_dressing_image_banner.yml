@@ -1,7 +1,7 @@
 routes:
   salad_dressing_image_banner:
     path: /admin/image-banner
-    controller: Salad\Dressing\ImageBanner\Controllers\ImageBannerController::index
+    controller: Salad\Dressing\ImageBanner\Controllers\ImageBannerController::admin
     methods: [GET]
 
   salad_dressing_image_banner_create:
