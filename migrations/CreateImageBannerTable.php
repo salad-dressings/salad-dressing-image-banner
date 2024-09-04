@@ -1,10 +1,10 @@
 <?php
-class CreateMailerTable
+class CreateImageBannerTable
 {
     public function up(PDO $pdo)
     {
         $pdo->exec("CREATE TABLE IF NOT EXISTS dressing_image_banner (
-            id INT AUTO_INCREMENT PRIMARY KEY
+            id INT AUTO_INCREMENT PRIMARY KEY,
             image_path TEXT,
             status INT DEFAULT 0
         )");
