@@ -1,0 +1,34 @@
+{
+    "name": "salad-dressing/image-banner",
+    "description": "SaladStack Image Banner extension",
+    "license": "MIT",
+    "type": "salad-section",
+    "autoload": {
+        "psr-4": {
+            "Salad\\Dressing\\ImageBanner\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "King Villanueva",
+            "email": "mrkong.villanueva@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "salad-extension": {
+            "title": "Image Banner",
+            "category": "feature",
+            "icon": "fas fa-image"
+        },
+        "resources": {
+            "migration": []
+        },
+        "navigation": {
+            "admin": "/admin/image-banner"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.12"
+    }
+}

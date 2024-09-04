@@ -1,0 +1,20 @@
+routes:
+  salad_dressing_image_banner:
+    path: /admin/image-banner
+    controller: Salad\Dressing\ImageBanner\Controllers\ImageBannerController::index
+    methods: [GET]
+
+  salad_dressing_image_banner_create:
+    path: /admin/image-banner/create
+    controller: Salad\Dressing\ImageBanner\Controllers\ImageBannerController::create
+    methods: [POST]
+
+  salad_dressing_image_banner_update:
+    path: /admin/image-banner/update
+    controller: Salad\Dressing\ImageBanner\Controllers\ImageBannerController::update
+    methods: [POST]
+
+  salad_dressing_image_banner_delete:
+    path: /admin/image-banner/delete
+    controller: Salad\Dressing\ImageBanner\Controllers\ImageBannerController::delete
+    methods: [GET]
