@@ -1,6 +1,6 @@
 <?php
 
-namespace Salad\Dressing\ImageBanner;
+namespace Salad\Dressing\ImageBanner\Extensions;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;

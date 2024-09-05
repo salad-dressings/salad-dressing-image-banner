@@ -6,6 +6,7 @@ class CreateImageBannerTable
         $pdo->exec("CREATE TABLE IF NOT EXISTS dressing_image_banner (
             id INT AUTO_INCREMENT PRIMARY KEY,
             image_path TEXT,
+            alt_text TEXT,
             status INT DEFAULT 0
         )");
     }

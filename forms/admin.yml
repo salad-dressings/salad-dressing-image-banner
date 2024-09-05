@@ -1,0 +1,26 @@
+form:
+  title: "Add Image Banner"
+  description: "Add Image Banner"
+  table: "dressing_image_banner"
+  type: list
+  fields:
+    - name: image_path
+      type: upload
+      label: Upload Banner Image
+      required: true
+      placeholder: Upload Banner Image
+    - name: alt_text
+      type: text
+      label: alt-text
+      placeholder: ""
+      required: true
+    - name: status
+      type: radio
+      label: Status
+      required: true
+      placeholder: Status
+      options:
+        - value: 1
+          label: Show
+        - value: 0
+          label: Hide
