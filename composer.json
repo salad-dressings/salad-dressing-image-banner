@@ -4,9 +4,7 @@
     "license": "MIT",
     "type": "salad-section",
     "autoload": {
-        "psr-4": {
-            "Salad\\Dressing\\ImageBanner\\": "src/"
-        }
+        "psr-4": {}
     },
     "authors": [
         {
