@@ -30,8 +30,7 @@
         "section": {
             "render" : "base_image_banner",
             "style" : "assets/css/style.css",
-            "scrtipt" : "assets/js/script.js",
-            "extension" : "\\Salad\\Dressing\\ImageBanner\\Extensions\\TwigExtension"
+            "script" : "assets/js/script.js"
         }
     },
     "require": {
