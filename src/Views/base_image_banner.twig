@@ -1,19 +1,20 @@
-<div class="slider">
+<div class="carousel">
+  <div class="carousel-images" id="carouselImages">
     {% for key, item in fetch_all('dressing_image_banner') %}
-        <input type="radio" name="slides" id="slide{{key}}">
+    <div class="carousel-slide">
+        <img src="{{item.image_path}}" alt="{{item.alt_text}}">
+    </div>
     {% endfor %}
+  </div>
 
-    <div class="slides">
-        {% for key, item in fetch_all('dressing_image_banner') %}
-            <div class="slide" id="s1">
-                <img src="{{item.image_path}}" alt="{{item.alt_text}}">
-            </div>
-        {% endfor %}
-    </div>
+  <div class="carousel-buttons">
+    <button id="prevBtn">&#10094;</button>
+    <button id="nextBtn">&#10095;</button>
+  </div>
 
-    <div class="navigation">
-        {% for item in fetch_all('dressing_image_banner') %}
-            <label for="slide{{key}}" class="nav-dot"></label>
-        {% endfor %}
-    </div>
+  <div class="carousel-indicators" id="carouselIndicators">
+    {% for key, item in fetch_all('dressing_image_banner') %}
+        <span></span>
+    {% endfor %}
+  </div>
 </div>

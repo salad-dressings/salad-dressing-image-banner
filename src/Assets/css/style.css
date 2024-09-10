@@ -1,61 +1,64 @@
 
-
-.slider {
+.carousel {
   position: relative;
-  max-width: 800px;
-  margin: auto;
+  width: 100%;
   overflow: hidden;
 }
 
-.slides {
+.carousel-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.slide img {
   width: 100%;
-  height: auto;
 }
 
-input[type="radio"] {
-  display: none;
+.carousel-slide {
+  flex: 0 0 100%; /* Each slide takes up 100% of the viewport width */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  width: 100vw; /* Ensure each slide takes up 100% of viewport width */
+  height: 100vh; /* Optional: Ensure each slide takes up 100% of viewport height */
 }
 
-#slide1:checked ~ .slides {
-  transform: translateX(0%);
+.carousel-slide img {
+  max-width: 100%; /* Ensure the image does not overflow the slide */
+  max-height: 100%; /* Ensure the image does not overflow the slide */
+  object-fit: contain; /* Maintain aspect ratio while fitting inside the slide */
 }
 
-#slide2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-#slide3:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-.navigation {
+.carousel-buttons {
   position: absolute;
-  bottom: 10px;
+  top: 50%;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
 }
 
-.nav-dot {
+.carousel-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.carousel-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-indicators span {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
-  background-color: white;
+  height: 10px;
+  width: 10px;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-input[type="radio"]:checked + .navigation .nav-dot {
-  background-color: gray;
+.active-indicator {
+  background-color: rgba(0, 0, 0, 0.9);
 }
